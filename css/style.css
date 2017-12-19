@@ -1,0 +1,195 @@
+* 
+{
+    /* Normalize */
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgb(190, 45, 45);
+    padding: 30px;
+}
+
+.header
+{
+    height: 95vh;
+    background-image: linear-gradient(
+         to right bottom,
+         rgba(255, 255, 255, 0.1),
+         rgba(255, 255, 255, 0.1)),
+    url(../img/Compressed_KU_Campus.jpg);
+    background-size: cover; 
+    background-position: top; /* Fits elements upon resizing */
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); /* Starts at top left corner and moves clockwise */
+}
+
+.logo-box
+{
+    position: absolute;
+    top: 35px;
+    left: 35px;
+
+}
+
+.Logo
+{
+    height: 70px;
+}
+
+.textBox
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Shifts to the middle of the text instead of the top right corner of the text */
+    text-align: center;
+}
+
+.headingPrimary
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #000;
+}
+
+.headingPrimaryMain
+{
+    display: block; /* Block level so that it occupies the whole horizontal area */
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation: moveInLeft 1s ease-out;
+}
+
+.headingPrimarySub
+{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    animation: moveInRight 1s ease-out;
+    margin-top: -20px;
+}
+
+/* Button */
+.btn:link,
+btn:visited
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px; /* Set the circular shape of the button */
+    transition: all 0.2s;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* x, y, blurr, color */
+    position: relative;
+}
+
+.btn-white
+{
+    background-color: rgb(255, 255, 255);
+    color: #777;
+}
+
+.btn:hover
+{
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4) /* x, y, blurr, color */
+}
+
+.btn:active
+{
+    transform: translateY(-1px); /* In relation to initial state */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4) /* x, y, blurr, color */
+}
+
+.btn::after
+{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /*Makes button be behind original one */
+    transition: all 0.4s;
+}
+
+.btn-white::after
+{
+    background-color: #FFF;
+}
+
+.btn:hover::after /* Show a bigger button that fades away */
+{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated
+{
+    animation: moveInBottom 0.5s ease-out 0.75s; /* Last one is animation delay */
+    animation-fill-mode: backwards; /* 0% in moveInBottom keyframe will be applied before animation starts */
+}
+
+/* Animations */
+@keyframes moveInLeft 
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%
+    {
+        transform: translateX(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
