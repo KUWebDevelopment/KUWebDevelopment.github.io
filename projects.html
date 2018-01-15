@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>KU Web Design Club</title>
+    </head>
+    <body>
+
+            <div class="navBar" id="myNavBar">
+
+                    <a href="#"> <img src="img/Jawhawk_Logo.png" alt="Logo" class="Logo"></a>
+                    <a href="index.html"> Home </a>
+                    <a href="about.html"> About </a>
+                    <a href="tutorials.html"> Tutorials </a>
+                    <a href="contact.html"> Contact Us </a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+
+            <div class="container">
+
+                <div class="textBox1">
+                    <h1 class="headingPrimary"><span class="headingPrimarySub">Projects</span></h1>
+                </div>
+
+            </div>
+
+
+
+
+
+        <script>
+                function myFunction() {
+                    var x = document.getElementById("myNavBar");
+                    if (x.className === "navBar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "navBar";
+                    }
+                }
+        </script>
+        
+    </body>
+</html>

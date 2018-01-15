@@ -44,6 +44,16 @@ body
     height: 70px;
 }
 
+
+.row:before, 
+.row:after 
+{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
 .textBox
 {
     position: absolute;
@@ -51,7 +61,10 @@ body
     left: 50%;
     transform: translate(-50%, -50%); /* Shifts to the middle of the text instead of the top right corner of the text */
     text-align: center;
+    
+    
 }
+
 
 .headingPrimary
 {
@@ -92,6 +105,9 @@ btn:visited
     margin-top: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* x, y, blurr, color */
     position: relative;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn-white
@@ -143,6 +159,98 @@ btn:visited
     animation-fill-mode: backwards; /* 0% in moveInBottom keyframe will be applied before animation starts */
 }
 
+/* Menu Bar */
+
+#menuBarIndex,
+#menuBarIndex ul
+{
+    list-style: none;
+}
+
+#menuBarIndex,
+#menuBarIndex li
+{
+    list-style: none;
+}
+
+.navBar 
+{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+}
+
+
+.navBar :hover
+{
+    /*TODO:  nav bar to extend on hover not specific buttons*/
+    /*TODO:  nav bar padding right side*/
+    height: 100px;
+    display: block;
+
+}
+  
+.navBar a 
+{
+    float: left;
+    display: block;
+    color: lightgrey;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    border-top: 6px solid black;
+
+}
+  
+.navBar a:hover 
+{
+    background-color: black;
+    color: white;
+    border-top: 6px solid white;
+    /*TODO:  Side borders instead of top for drop down menu*/
+
+}
+
+.active 
+{
+    color: purple;
+}
+  
+.navBar .icon 
+{
+    display: none;
+}
+  
+@media screen and (max-width: 600px) 
+{
+    .navBar a:not(:first-child) {display: none;}
+    .navBar a.icon 
+    {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    .navBar.responsive {position: relative;}
+    .navBar.responsive .icon 
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navBar.responsive a 
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 /* Animations */
 @keyframes moveInLeft 
 {
@@ -192,4 +300,40 @@ btn:visited
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Grid System */
+.container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.textBox1
+{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+.textBox2 
+{
+    grid-column: 2;
+    grid-row: 3;
+    color: black;
+    text-align: center;
+}
+.textBox3 
+{ 
+    grid-column: 2;
+    grid-row: 4;
+    color: black;
+    text-align: center;
+}
+.textBox3 
+{ 
+    grid-column: 2;
+    grid-row: 5;
+    color: black;
+    text-align: center;
 }
