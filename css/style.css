@@ -368,6 +368,8 @@ btn:visited
     .thumbnail
     {
         margin: auto;
+        width: 80%;
+        
     }
 }
 
