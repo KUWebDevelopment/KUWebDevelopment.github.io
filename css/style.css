@@ -13,7 +13,7 @@ body
     font-size: 16px;
     line-height: 1.7;
     color: rgb(190, 45, 45);
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header
@@ -301,10 +301,12 @@ btn:visited
     }
 }
 
+/* End of animations */
+
 .informationBoxes
 {
-    margin-left: -1.3%;
-    margin-right: -1.3%;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
     text-align: center;
     color: black;
     background-color: #f3f3fc;
@@ -321,14 +323,14 @@ btn:visited
 {
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom, rgba(217, 168, 160, 0.8), rgba(210, 213, 221, 0.8));
-    background-size: cover;
+    background-size: auto;
     transform: skewY(-7deg);
-    height: 95vh;
+    /* height: 170vh; */
     margin-top: -10rem;
  }
 .infoBox2 > * 
 {
-    transform: skewY(7deg); 
+    transform: skewY(7deg); /* shifts text to be normal */
 }
 
 .infoBox3
@@ -343,7 +345,23 @@ btn:visited
     height: 80vh;
 }
 
+.thumbnail
+{
+    width: 60%;
+}
 
+.projectLeft
+{
+    margin-left: 37%;
+}
+
+@media (max-width: 991px)
+{
+    .thumbnail
+    {
+        margin: auto;
+    }
+}
 
 
 
