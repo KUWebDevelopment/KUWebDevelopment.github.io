@@ -22,6 +22,7 @@ p
     padding-right:10%;
 }
 
+/* Start of header */
 .header
 {
     height: 95vh;
@@ -98,6 +99,7 @@ p
     animation: moveInRight 1s ease-out;
     margin-top: -20px;
 }
+/* End of Header */
 
 /* Button */
 .btn:link,
@@ -324,7 +326,9 @@ btn:visited
 
 .infoBox1
 {
-    height: 95vh;
+    /* height: 95vh; */
+    background-size: auto;
+    padding-bottom: 20rem;
 }
 
 .infoBox2 
@@ -353,7 +357,8 @@ btn:visited
     height: 80vh;
 }
 
-.thumbnail
+/* Project links in infoBox 2 */
+.projectList
 {
     width: 60%;
 }
@@ -363,15 +368,95 @@ btn:visited
     margin-left: 37%;
 }
 
-@media (max-width: 991px)
+.projectDescription
 {
-    .thumbnail
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.projectDescriptionLayerLeft
+{
+    position: absolute;
+    top: 0;
+    bottom: 9%;
+    left: 37.5%;
+    right: 4.9%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.projectDescriptionLayerRight
+{
+    position: absolute;
+    top: 0;
+    bottom: 9.2%;
+    left: 2.4%;
+    right: 40.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.projectList:hover .projectDescriptionLayerLeft
+{
+    opacity: 0.8;
+}
+
+.projectList:hover .projectDescriptionLayerRight
+{
+    opacity: 0.8;
+}
+
+@media (max-width: 991px) /* Optimize for medium or smaller screens */
+{
+    .projectList
     {
         margin: auto;
-        width: 80%;
-        
+        width: 80%; 
+    }
+
+    .projectDescriptionLayerLeft
+    {
+        position: absolute;
+        top: 0;
+        bottom: 6.2%;
+        left: 11.8%;
+        right: 11.8%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+
+    .projectDescriptionLayerRight
+    {
+        position: absolute;
+        top: 0;
+        bottom: 6.2%;
+        left: 11.8%;
+        right: 11.8%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+
+    .projectList:hover .projectDescriptionLayerLeft
+    {
+        opacity: 0.8;
+    }
+
+    .projectList:hover .projectDescriptionLayerRight
+    {
+        opacity: 0.8;
     }
 }
+/* End of project links */
 
 
 
