@@ -17,7 +17,10 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
+
     <body>
+
+        <!-- top header of page with clickable links to scroll to various sections of the page-->
         <header class="header">
 
 			<div class="logo-box">
@@ -42,40 +45,93 @@
 
         </header>
 
-        <!--
-
-        alternate layout
-        <div class="containerMain">
-                
-            <div class="textBox1">
-                <h1 class="headingPrimary"><span class="headingPrimarySub">About Us</span></h1>
-            </div>
-
-            <div class="textBox2">
-                    <h1 class="headingPrimary"><span class="headingPrimarySub">Our Projects</span></h1>
-            </div>
-
-            <div class="textBox3">
-                    <h1 class="headingPrimary"><span class="headingPrimarySub">Tutorials</span></h1>
-            </div>
-
-            <div class="textBox4">
-                    <h1 class="headingPrimary"><span class="headingPrimarySub">Contact Us</span></h1>
-            </div>
-     
-        </div>
-        -->
 
         <div class="container-fluid">
             <div class="informationBoxes">
+
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox1" id="about">
                             <h1 class="headingPrimary"><span class="headingPrimarySub">About Us</span></h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur inventore culpa amet fugit, quo temporibus excepturi, ipsum vel porro ipsa, animi illo officiis necessitatibus nam sit! Inventore consectetur autem voluptatibus.</p>
+                            <p> 
+                                    We’re KU students interested in exploring web design & web development. We welcome all KU students interested in the web development field regardless of experience. We offer info sessions on web development languages as well as best practices. These skills will be used to develop individual and group based projects within the club ranging from beginner level to more advanced web development projects. 
+                            <br><br>
+                            </p>
+
+                            <!--TODO: Where and When We meet-->  
+                            <div class="row">
+                                    <div class="col-md-4 col-xs-12">
+                                            <h3>Where We Meet</h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iste obcaecati perspiciatis! Consequatur necessitatibus illo earum eveniet neque iusto dicta. Aspernatur, nostrum. Accusantium voluptates officiis eveniet amet veniam! Praesentium, amet.</p>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                            <h3>When We Meet</h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iste obcaecati perspiciatis! Consequatur necessitatibus illo earum eveniet neque iusto dicta. Aspernatur, nostrum. Accusantium voluptates officiis eveniet amet veniam! Praesentium, amet.</p>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                            <h3>How to Join</h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iste obcaecati perspiciatis! Consequatur necessitatibus illo earum eveniet neque iusto dicta. Aspernatur, nostrum. Accusantium voluptates officiis eveniet amet veniam! Praesentium, amet.</p>
+                                    </div>
+                                </div>
+
+                            
+
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                                <h3>Officers and Advisor</h3>
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+                                
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                
+                                      <div class="item active">
+                                        <div id="carouselImage"><img src="https://scontent.ffsd1-1.fna.fbcdn.net/v/t1.0-9/428945_119525241523093_1584451099_n.jpg?oh=0aaf8263a409be6c22ff1cceab4e4cf3&oe=5AF4F2B1" alt="Giovanni A" style"height:100%;"></div>
+                                        <div class="carousel-caption">
+                                          <h3>Giovanni A</h3>
+                                          <p>Fun Advisor</p>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="item">
+                                            <div id="carouselImage"><img src="https://scontent.ffsd1-1.fna.fbcdn.net/v/t1.0-9/305690_3123190565624_1109703976_n.jpg?oh=43254a16d292de2f9b43478ec802e089&oe=5AE6DEAD" alt="Chicago" style"height:100%;"></div>
+                                        <div class="carousel-caption">
+                                          <h3>Giovanni A</h3>
+                                          <p>Smile Director</p>
+                                        </div>
+                                      </div>
+                                    
+                                      <div class="item">
+                                        <div id="carouselImage"><img src="https://scontent.ffsd1-1.fna.fbcdn.net/v/t1.0-9/547496_397401926945889_1904948884_n.jpg?oh=5f960105caf7331b69f058bf11ca9737&oe=5AEF99EA" alt="New York" style"height:100%;"></div>
+                                        <div class="carousel-caption">
+                                          <h3>Giovanni A</h3>
+                                          <p>Disciplinary Chair</p>
+                                        </div>
+                                      </div>
+                                  
+                                    </div>
+                                
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-left"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                      <span class="glyphicon glyphicon-chevron-right"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+
+
                         </div>
                     </div>
                 </div>
+
+                 <!--TODO: add in projects in format similar to pascalvangemert.nl-->    
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox2" id="projects">
@@ -106,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox3" id="tutorials">
@@ -115,14 +171,22 @@
                         </div>
                     </div>
                 </div>
+                <!--TODO: Input contact information-->  
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox4" id="contact">
                             <h1 class="headingPrimary"><span class="headingPrimarySub">Contact Us</span></h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa iste obcaecati perspiciatis! Consequatur necessitatibus illo earum eveniet neque iusto dicta. Aspernatur, nostrum. Accusantium voluptates officiis eveniet amet veniam! Praesentium, amet.</p>
+                            <p>For more information or questions about attending a meeting, contact us at: </p>
+                            <h3>
+                                
+                                Email: <br>
+                                Slack: <br>
+
+                            </h3>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
             

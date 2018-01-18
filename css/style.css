@@ -16,6 +16,12 @@ body
     padding: 3rem;
 }
 
+p
+{
+    padding-left: 10%;
+    padding-right:10%;
+}
+
 .header
 {
     height: 95vh;
@@ -79,6 +85,8 @@ body
     font-weight: 400;
     letter-spacing: 15px;
     animation: moveInLeft 1s ease-out;
+
+    padding: 10px;
 }
 
 .headingPrimarySub
@@ -363,6 +371,15 @@ btn:visited
     }
 }
 
+
+
+/* Carousel */
+.carousel 
+{
+    width:80%;
+    height:25%;
+    margin:0 auto; /* center your carousel if other than 100% */ 
+}
 
 
 /* Grid System */
