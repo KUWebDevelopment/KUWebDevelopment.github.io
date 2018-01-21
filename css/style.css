@@ -48,7 +48,8 @@ p
 
 .Logo
 {
-    height: 70px;
+    /* height: 70px; */
+    width: 6.2vw;
 }
 
 
@@ -540,7 +541,7 @@ btn:visited
     }
 }
 
-@media (max-width: 769px) /* Optimize for small phone screens */
+@media (max-width: 767px) /* Optimize for tablet screens */
 {
     .projectsIcon
     {
@@ -549,6 +550,15 @@ btn:visited
         right: 12.4%;
         background-color: gray;
         padding: 2.5%;
+    }
+}
+
+@media (max-width: 479px)
+{
+    .projectsIcon
+    {
+        top: 2.5%;
+        right: 13.8%;
     }
 }
 /* End of project links */
