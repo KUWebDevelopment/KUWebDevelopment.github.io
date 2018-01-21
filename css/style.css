@@ -360,6 +360,25 @@ btn:visited
 }
 
 /* Project links in infoBox 2 */
+
+.projectsIconLeft
+{
+    position: absolute;
+    top: 0.5rem;
+    right: 3.8rem;
+    background-color: gray;
+    padding: 2.5%;
+}
+
+.projectsIconRight
+{
+    position: absolute;
+    top: 2.3%;
+    right: 41.3%;
+    background-color: gray;
+    padding: 2.5%;
+}
+
 .projectList
 {
     width: 60%;
@@ -375,12 +394,12 @@ btn:visited
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 60%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 35%;
+    left: -5%;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .projectDescriptionLayerLeft
@@ -393,7 +412,6 @@ btn:visited
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(154, 155, 153);
-    /* animation: moveInRigth 2s ease-out; */
 }
 
 .projectDescriptionLayerRight
@@ -406,7 +424,6 @@ btn:visited
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(154, 155, 153);
-    /* animation: moveInRigth 2s ease-out; */
 }
 
 .projectList:hover .projectDescriptionLayerLeft
@@ -419,9 +436,21 @@ btn:visited
     opacity: 0.9;
 }
 
+.projectList:hover .projectTitle
+{
+    opacity: 0.9;
+    animation: moveInLeft 0.4s ease-out;
+    left: 10%;
+}
+
+.projectList:hover .projectDescription
+{
+    animation: moveInRight 0.4s ease-out; /* Last one is animation delay */
+    animation-fill-mode: backwards;
+}
+
 .projectTitle
 {
-    animation: moveInLeft 1s ease-out;
     color: white;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -429,15 +458,41 @@ btn:visited
     width: 50%;
     text-align: center;
     margin-bottom: -5%;
+    font-weight: 700;
 }
 
-hr
+.lineBottom
 {
-    width: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white; /* whichever color you prefer */
+    animation: none;
 }
 
-@media (max-width: 991px) /* Optimize for medium or smaller screens */
+.projectAnchor
 {
+    z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 991px) /* Optimize for medium screens */
+{
+    .projectsIcon
+    {
+        position: absolute;
+        top: 1.2%;
+        right: 11.8%;
+        background-color: gray;
+        padding: 2.5%;
+    }
+
     .projectList
     {
         margin: auto;
@@ -452,7 +507,6 @@ hr
         left: 11.8%;
         right: 11.8%;
         opacity: 0;
-        transition: .5s ease;
         background-color: rgb(154, 155, 153);
     }
 
@@ -471,16 +525,33 @@ hr
     .projectList:hover .projectDescriptionLayerLeft
     {
         opacity: 0.9;
+        transition: .5s ease;
     }
 
     .projectList:hover .projectDescriptionLayerRight
     {
         opacity: 0.9;
+        transition: .5s ease;
+    }
+
+    .lineBottom
+    {
+        border-bottom: 2px solid white;
+    }
+}
+
+@media (max-width: 769px) /* Optimize for small phone screens */
+{
+    .projectsIcon
+    {
+        position: absolute;
+        top: 1.5%;
+        right: 12.4%;
+        background-color: gray;
+        padding: 2.5%;
     }
 }
 /* End of project links */
-
-
 
 /* Carousel */
 .carousel 
@@ -489,88 +560,6 @@ hr
     height: 40%;
     margin:0 auto; /* center your carousel if other than 100% */ 
 }
-
-
-/* Grid System */
-/* .container 
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-
-    
-}
-.containerMain
-{
-    padding: 25px;
-    margin-top: 0px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-    grid-auto-rows: minmax(100, auto);
-
-    height: 95vh;
-    background-size: cover; 
-    background-position: top;
-    position: relative;
-} 
-.textBox1
-{
-    margin-top: 35px;
-    grid-column: 1/4;
-    grid-row: 1;
-    text-align: center;
-    color: black;
-    padding: 20px;
-    margin-bottom: -311px;
-
-    background: orange;
-}
-.textBox2 
-{
-    grid-column: 1/4;
-    grid-row: 2;
-    color: black;
-    text-align: center;
-    padding: 20px;
-
-    background: purple;
-}
-.textBox3 
-{ 
-    grid-column: 1/4;
-    grid-row: 3;
-    color: black;
-    text-align: center;
-    padding: 20px;
-
-    background: green;
-}
-.textBox4 
-{ 
-    grid-column: 1/4;
-    grid-row: 4;
-    text-align: center;
-    color: black;
-    padding: 20px;
-
-    background: orange;
-}
-
-.textBox5 
-{
-    grid-column: 1/4;
-    grid-row: 5;
-    color: black;
-    text-align: center;
-    padding: 20px;
-
-    background: purple;
-} */
-
-
 
 /*
 Color Scheme:
