@@ -1,4 +1,4 @@
-* 
+*
 {
     /* Normalize */
     margin:0px;
@@ -8,7 +8,7 @@
 
 body
 {
-    font-family: "Lato", sans-serif;
+    font-family: "PoetsenOne-Regular" !important;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -30,8 +30,8 @@ p
          to right bottom,
          rgba(255, 255, 255, 0.1),
          rgba(255, 255, 255, 0.1)),
-    url(../img/Compressed_KU_Campus.jpg);
-    background-size: cover; 
+    url(../img/CampusEditedCutSky.jpg);
+    background-size: cover;
     background-position: top; /* Fits elements upon resizing */
     position: relative;
 
@@ -40,22 +40,26 @@ p
 
 .logo-box
 {
-    position: absolute;
-    top: 35px;
-    left: 35px;
-    /*position: fixed;*/
+    padding: 20px !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    float: left !important;
+    width: 6vw;
 }
 
 .Logo
 {
-    /* height: 70px; */
-    width: 6.2vw;
+  display: block;
+  margin-left: 25%;
+  margin-top: 25%;
+  width: 6vw;
 }
 
 
-.row:before, 
-.row:after 
+.row:before,
+.row:after
 {
+    margin-top: 5%;
     content:"";
     display: table;
     clear: both;
@@ -69,7 +73,7 @@ p
     left: 50%;
     transform: translate(-50%, -50%); /* Shifts to the middle of the text instead of the top right corner of the text */
     text-align: center;
-    
+
 }
 
 
@@ -77,13 +81,25 @@ p
 {
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 3px 3px #000;
+    /* text shadow adapted from http://markdotto.com/playground/3d-text/ */
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .headingPrimaryMain
 {
     display: block; /* Block level so that it occupies the whole horizontal area */
-    font-size: 90px;
+    font-size: 180px;
     font-weight: 400;
     letter-spacing: 15px;
     animation: moveInLeft 1s ease-out;
@@ -94,7 +110,7 @@ p
 .headingPrimarySub
 {
     display: block;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 15px;
     animation: moveInRight 1s ease-out;
@@ -128,7 +144,7 @@ btn:visited
 
 .btn:hover
 {
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.4) /* x, y, blurr, color */
 }
 
@@ -183,7 +199,7 @@ btn:visited
     list-style: none;
 }
 
-.navBar 
+.navBar
 {
     overflow: hidden;
     background-color: black;
@@ -202,8 +218,8 @@ btn:visited
     display: block;
 
 }
-  
-.navBar a 
+
+.navBar a
 {
     float: left;
     display: block;
@@ -214,8 +230,8 @@ btn:visited
     border-top: 6px solid black;
 
 }
-  
-.navBar a:hover 
+
+.navBar a:hover
 {
     background-color: black;
     color: white;
@@ -224,36 +240,36 @@ btn:visited
 
 }
 
-.active 
+.active
 {
     color: purple;
 }
-  
-.navBar .icon 
+
+.navBar .icon
 {
     display: none;
 }
-  
-@media screen and (max-width: 600px) 
+
+@media screen and (max-width: 600px)
 {
     .navBar a:not(:first-child) {display: none;}
-    .navBar a.icon 
+    .navBar a.icon
     {
         float: right;
         display: block;
     }
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px)
 {
     .navBar.responsive {position: relative;}
-    .navBar.responsive .icon 
+    .navBar.responsive .icon
     {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .navBar.responsive a 
+    .navBar.responsive a
     {
         float: none;
         display: block;
@@ -262,7 +278,7 @@ btn:visited
 }
 
 /* Animations */
-@keyframes moveInLeft 
+@keyframes moveInLeft
 {
     0%
     {
@@ -320,7 +336,7 @@ btn:visited
     margin-right: -1.5rem;
     text-align: center;
     color: black;
-    background-color: #f3f3fc;
+    background-color: #c9ddff;
     padding: 25rem 0 0 0;
     margin-top: -25vh;
 }
@@ -332,16 +348,16 @@ btn:visited
     padding-bottom: 20rem;
 }
 
-.infoBox2 
+.infoBox2
 {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba(217, 168, 160, 0.8), rgba(210, 213, 221, 0.8));
+    background-color: #f7adad;
     background-size: auto;
     transform: skewY(-7deg);
     /* height: 170vh; */
     margin-top: -10rem;
  }
-.infoBox2 > * 
+.infoBox2 > *
 {
     transform: skewY(7deg); /* shifts text to be normal */
 }
@@ -354,7 +370,7 @@ btn:visited
 
 .infoBox4
 {
-    background: #858481;
+    background-color: #f7adad;
     height: 80vh;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -497,7 +513,7 @@ btn:visited
     .projectList
     {
         margin: auto;
-        width: 80%; 
+        width: 80%;
     }
 
     .projectDescriptionLayerLeft
@@ -564,11 +580,11 @@ btn:visited
 /* End of project links */
 
 /* Carousel */
-.carousel 
+.carousel
 {
     width: 40%;
     height: 40%;
-    margin:0 auto; /* center your carousel if other than 100% */ 
+    margin:0 auto; /* center your carousel if other than 100% */
 }
 
 
