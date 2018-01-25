@@ -500,7 +500,7 @@ btn:visited
         position: absolute;
         top: 1.2%;
         right: 11.8%;
-        background-color: gray;
+        background-color: rgba(199, 220, 221, 0.2);
         padding: 2.5%;
     }
 
@@ -518,7 +518,7 @@ btn:visited
         left: 11.8%;
         right: 11.8%;
         opacity: 0;
-        background-color: rgb(154, 155, 153);
+        background-color: rgba(1, 14, 31, 0.9);
     }
 
     .projectDescriptionLayerRight
@@ -530,7 +530,7 @@ btn:visited
         right: 11.8%;
         opacity: 0;
         transition: .5s ease;
-        background-color: rgb(154, 155, 153);
+        background-color: rgba(1, 14, 31, 0.9);
     }
 
     .projectList:hover .projectDescriptionLayerLeft
@@ -558,7 +558,7 @@ btn:visited
         position: absolute;
         top: 1.5%;
         right: 12.4%;
-        background-color: gray;
+        background-color: rgba(199, 220, 221, 0.2);
         padding: 2.5%;
     }
 }
@@ -641,10 +641,6 @@ btn:visited
 /* End Carousel */
 
 /* Info Sessions Area */
-.tutorialRow .col-1-of-3 
-{
-    width: calc((100% - 2 * 6rem) / 3);
-} 
 
 .leftInfoSession
 {
@@ -662,6 +658,7 @@ btn:visited
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem; 
+    margin: 4%;
 }
 .card__side 
 {
@@ -812,47 +809,62 @@ btn:visited
     max-width: 114rem;
     margin: 0 auto; 
 }
-.tutorialRow:not(:last-child) 
-{
-    margin-bottom: 8rem;
-}
-.tutorialRow::after 
-{
-    content: "";
-    display: table;
-    clear: both; 
-}
-.tutorialRow [class^="col-"] 
-{
-    float: left;
-}
-.tutorialRow [class^="col-"]:not(:last-child) 
-{
-    margin-right: 6rem; 
-}
-.tutorialRow .col-1-of-2 
-{
-    width: calc((100% - 6rem) / 2);
-}
-.tutorialRow .col-1-of-3 
-{
-    width: calc((100% - 2 * 6rem) / 3); 
-}
-.tutorialRow .col-2-of-3 
-{
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-}
-.tutorialRow .col-1-of-4 
-{
-    width: calc((100% - 3 * 6rem) / 4); 
-}
-.tutorialRow .col-2-of-4 
-{
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); 
-}
-.tutorialRow .col-3-of-4 
-{
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); 
+
+@media only screen and (max-width: 991px), only screen and (hover: none){
+    .leftInfoSession
+    {
+        margin-left: 0%;
+    }
+
+    .rightInfoSession
+    {
+        margin-right: 0%;
+    }
+    
+    .card{
+        height:auto;
+        border-radius:3px;
+        background-color:#fff;
+        -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
+        box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
+        width: 45vm;
+        margin: 20%;
+    }
+
+    .card__side{
+        height:auto;
+        position:relative;
+        -webkit-box-shadow:none;
+        box-shadow:none
+    }
+    .card__side--back{
+        -webkit-transform:rotateY(0);
+        transform:rotateY(0);
+        -webkit-clip-path:polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        clip-path:polygon(0 15%, 100% 0, 100% 100%, 0% 100%)
+    }
+    .card:hover .card__side--front{
+        -webkit-transform:rotateY(0);
+        transform:rotateY(0)
+    }
+    .card__details{
+        padding:1rem 3rem
+    }
+    .card__cta{
+        position:relative;
+        top:0%;
+        left:0;
+        -webkit-transform:translate(0);
+        transform:translate(0);
+        width:100%;
+        padding:7rem 4rem 4rem 4rem
+    }
+    .card__price-box{
+        margin-bottom:3rem
+    }
+    .card__price-value{
+        font-size:4rem
+    }
 }
 
 
@@ -900,3 +912,10 @@ btn:visited
     text-align: center !important; 
 }
 /* End Contact Section Content*/
+
+@media only screen and (max-width: 56.25em){
+    .section-tours{
+        padding:20rem 0 10rem 0
+    }
+}
+
