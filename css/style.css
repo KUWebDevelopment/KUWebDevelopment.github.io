@@ -814,11 +814,13 @@ btn:visited
     .leftInfoSession
     {
         margin-left: 0%;
+        margin-top: -15%;
     }
 
     .rightInfoSession
     {
         margin-right: 0%;
+        margin-bottom: -20%;
     }
     
     .card{
@@ -828,7 +830,7 @@ btn:visited
         -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
         box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
         width: 45vm;
-        margin: 20%;
+        margin: 10%;
     }
 
     .card__side{
@@ -913,9 +915,5 @@ btn:visited
 }
 /* End Contact Section Content*/
 
-@media only screen and (max-width: 56.25em){
-    .section-tours{
-        padding:20rem 0 10rem 0
-    }
-}
+
 
