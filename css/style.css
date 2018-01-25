@@ -104,7 +104,7 @@ p
     letter-spacing: 15px;
     animation: moveInLeft 1s ease-out;
 
-    padding: 10px;
+    padding: 15px;
 }
 
 .headingPrimarySub
@@ -112,7 +112,7 @@ p
     display: block;
     font-size: 50px;
     font-weight: 700;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     animation: moveInRight 1s ease-out;
     margin-top: -20px;
 }
@@ -336,7 +336,7 @@ btn:visited
     margin-right: -1.5rem;
     text-align: center;
     color: black;
-    background-color: #c9ddff;
+    background-color: #6cc0e5;
     padding: 25rem 0 0 0;
     margin-top: -25vh;
 }
@@ -351,7 +351,7 @@ btn:visited
 .infoBox2
 {
     padding: 20rem 0;
-    background-color: #f7adad;
+    background-color: #fb4f4f;
     background-size: auto;
     transform: skewY(-7deg);
     /* height: 170vh; */
@@ -370,8 +370,8 @@ btn:visited
 
 .infoBox4
 {
-    background-color: #f7adad;
-    height: 80vh;
+    background-color: #fb4f4f;
+    height: 30vh;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
