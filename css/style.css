@@ -6,13 +6,27 @@
     box-sizing: border-box;
 }
 
+/*
+
+IMPORTANT
+Color Scheme:
+
+Rich Black: #010E1F rgba(1, 14, 31, 1)
+Columbia Blue: #C7DCDD rgba(199, 220, 221, 1)
+Cambridge Blue: #9BC6BF rgba(155, 198, 191, 1)
+Desaturated Cyan: #6A9A9E rgba(106, 154, 158, 1)
+Deep Space Sparkle: #325C6C rgba(50, 92, 108, 1)
+Deep Koamaru: #28345A rgba(40, 52, 90, 1)
+
+*/
+
 body
 {
     font-family: "Roboto" !important;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: rgb(190, 45, 45);
+    color: #010E1F;
     padding: 3rem;
 }
 
@@ -20,6 +34,21 @@ p
 {
     padding-left: 10%;
     padding-right:10%;
+    color: #010E1F;
+}
+
+h1 strong
+{
+    font-family: "SIMPLIFICA Typeface" !important;
+    color: #28345A; 
+    font-weight:bold;
+}
+
+h3 strong
+{
+    font-family: "SIMPLIFICA Typeface" !important;
+    color: #325C6C;
+    font-weight:bold;
 }
 
 /* Start of header */
@@ -28,15 +57,16 @@ p
     height: 95vh;
     background-image: linear-gradient(
          to right bottom,
-         rgba(255, 255, 255, 0.1),
-         rgba(255, 255, 255, 0.1)),
-    url(../img/CampusEditedCutSky.jpg);
+         rgba(155, 198, 191, 0.4),
+         rgba(50, 92, 108, 0.9)),
+    url(../img/Compressed_KU_Campus.jpg);
     background-size: cover;
     background-position: top; /* Fits elements upon resizing */
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); /* Starts at top left corner and moves clockwise */
 }
+
 
 .logo-box
 {
@@ -82,7 +112,8 @@ p
 {
     color: #fff;
     text-transform: uppercase;
-    /* text shadow adapted from http://markdotto.com/playground/3d-text/ */
+    font-family: "SIMPLIFICA Typeface" !important;
+    /* text shadow adapted from http://markdotto.com/playground/3d-text/ 
     text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -95,15 +126,17 @@ p
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    */
 }
 
 .headingPrimaryMain
 {
+    
     display: block; /* Block level so that it occupies the whole horizontal area */
     font-size: 180px;
     font-weight: 400;
     letter-spacing: 15px;
-    animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 2s ease-out;
 
     padding: 15px;
 }
@@ -111,10 +144,10 @@ p
 .headingPrimarySub
 {
     display: block;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 400;
     letter-spacing: 5px;
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 2s ease-out;
     margin-top: -20px;
 }
 /* End of Header */
@@ -200,57 +233,8 @@ btn:visited
     list-style: none;
 }
 
-.navBar
-{
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    height: 75px;
-    width: 100%;
-}
 
-
-.navBar :hover
-{
-    /*TODO:  nav bar to extend on hover not specific buttons*/
-    /*TODO:  nav bar padding right side*/
-    height: 100px;
-    display: block;
-
-}
-
-.navBar a
-{
-    float: left;
-    display: block;
-    color: lightgrey;
-    text-align: center;
-    padding: 20px 15px;
-    text-decoration: none;
-    border-top: 6px solid black;
-
-}
-
-.navBar a:hover
-{
-    background-color: black;
-    color: white;
-    border-top: 6px solid white;
-    /*TODO:  Side borders instead of top for drop down menu*/
-
-}
-
-.active
-{
-    color: purple;
-}
-
-.navBar .icon
-{
-    display: none;
-}
-
+/* Nav Bar */
 @media screen and (max-width: 600px)
 {
     .navBar a:not(:first-child) {display: none;}
@@ -336,8 +320,7 @@ btn:visited
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     text-align: center;
-    color: black;
-    background-color: #6cc0e5;
+    background-color: #f3f3fc;
     padding: 25rem 0 0 0;
     margin-top: -25vh;
 }
@@ -352,7 +335,8 @@ btn:visited
 .infoBox2
 {
     padding: 20rem 0;
-    background-color: #fb4f4f;
+    background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
+    rgba(50, 92, 108, 0.9));
     background-size: auto;
     transform: skewY(-7deg);
     /* height: 170vh; */
@@ -371,10 +355,21 @@ btn:visited
 
 .infoBox4
 {
-    background-color: #fb4f4f;
-    height: 30vh;
+    position: relative;
+    padding: 5rem 0; 
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.Last
+{
+    position: relative;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    text-align: center;
+    padding: 0%;
+    height: 40%;
+    padding: 2% 0; 
 }
 
 /* Project links in infoBox 2 */
@@ -384,7 +379,7 @@ btn:visited
     position: absolute;
     top: 0.5rem;
     right: 3.8rem;
-    background-color: gray;
+    background-color: rgba(199, 220, 221, 0.2);
     padding: 2.5%;
 }
 
@@ -393,7 +388,7 @@ btn:visited
     position: absolute;
     top: 2.3%;
     right: 41.3%;
-    background-color: gray;
+    background-color: rgba(199, 220, 221, 0.2);
     padding: 2.5%;
 }
 
@@ -429,7 +424,7 @@ btn:visited
     right: 4.9%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(154, 155, 153);
+    background-color: rgba(1, 14, 31, 0.9);
 }
 
 .projectDescriptionLayerRight
@@ -441,7 +436,7 @@ btn:visited
     right: 40.5%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(154, 155, 153);
+    background-color: rgba(1, 14, 31, 0.9);
 }
 
 .projectList:hover .projectDescriptionLayerLeft
@@ -469,7 +464,7 @@ btn:visited
 
 .projectTitle
 {
-    color: white;
+    color: #C7DCDD;
     padding-top: 5%;
     padding-bottom: 3%;
     margin-left: 6%;
@@ -482,7 +477,7 @@ btn:visited
 .lineBottom
 {
     padding-bottom: 10px;
-    border-bottom: 2px solid white; /* whichever color you prefer */
+    border-bottom: 2px solid #C7DCDD; /* whichever color you prefer */
     animation: none;
 }
 
@@ -588,6 +583,64 @@ btn:visited
     margin:0 auto; /* center your carousel if other than 100% */
 }
 
+.container .carousel-control
+{
+    position: absolute;
+    top: 65%;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    font-size: auto;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.container .carousel-indicators
+{
+    bottom: -50px;
+}
+.container .carousel-indicators li
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #010E1F;
+    border-radius: 50%;
+}
+
+.container .carousel-indicators .active
+{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #6A9A9E;
+}
+.container .carousel-caption
+{
+    position: absolute;
+    top: 65%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    background: rgba(199, 220, 221, 0.7);
+}
+
+.carousel h3
+{
+    font-family: "SIMPLIFICA Typeface" !important;
+    color: #325C6C;
+    font-weight:bold;
+}
+/* End Carousel */
 
 /* Info Sessions Area */
 .tutorialRow .col-1-of-3 
@@ -804,11 +857,20 @@ btn:visited
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); 
 }
 
-/*
-Color Scheme:
-Light Gray: #858481
-Peach: #d9a8a0
-White Gray: #f3f3fc
-Dark Gray: #485053
-Plum: #4b202c
-*/
+.contactInfo 
+{
+    height: 20%;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: 1.6rem;
+}
+
+.contactInfoText
+{
+    text-align: center !important; 
+}
+/* End Contact Section Content*/
