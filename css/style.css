@@ -51,6 +51,11 @@ h3 strong
     font-weight:bold;
 }
 
+.row
+{
+    margin: auto !important;
+}
+
 /* Start of header */
 .header
 {
@@ -133,7 +138,7 @@ h3 strong
 {
     
     display: block; /* Block level so that it occupies the whole horizontal area */
-    font-size: 180px;
+    font-size: 400%;
     font-weight: 400;
     letter-spacing: 15px;
     animation: moveInLeft 2s ease-out;
@@ -334,7 +339,7 @@ btn:visited
 
 .infoBox2
 {
-    padding: 20rem 0;
+    padding: 10rem 0;
     background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
     rgba(50, 92, 108, 0.9));
     background-size: auto;
@@ -349,7 +354,7 @@ btn:visited
 
 .infoBox3
 {
-    padding: 25rem 0 15rem 0;
+    padding: 10rem 0 10rem 0;
     background-size: auto;
 }
 
@@ -642,7 +647,7 @@ btn:visited
 
 /* Info Sessions Area */
 
-.leftInfoSession
+/* .leftInfoSession
 {
     margin-left: 6%;
 }
@@ -650,7 +655,7 @@ btn:visited
 .rightInfoSession
 {
     margin-right: -6%;
-}
+} */
 
 .card 
 {
