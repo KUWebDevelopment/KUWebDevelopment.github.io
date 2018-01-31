@@ -844,7 +844,12 @@ btn:visited
         -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
         box-shadow:0 1.5rem 4rem rgba(0,0,0,0.15);
         width: 45vm;
-        margin: 10%;
+        margin: 7%;
+    }
+
+    .card__heading-span
+    {
+        padding: 2%;
     }
 
     .card__side{
