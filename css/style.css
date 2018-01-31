@@ -80,14 +80,14 @@ h3 strong
     background-repeat: no-repeat !important;
     float: left !important;
     width: 6vw;
-    margin-left: 2%;
+    margin-left: 1%;
 }
 
 .Logo
 {
   display: block;
-  margin-left: 25%;
-  margin-top: 25%;
+  margin-left: 0%;
+  margin-top: 50%;
   width: 6vw;
 }
 
@@ -163,7 +163,7 @@ btn:visited
 {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 10px 30px;
     display: inline-block;
     border-radius: 100px; /* Set the circular shape of the button */
     transition: all 0.2s;
@@ -330,6 +330,7 @@ btn:visited
     margin-top: -25vh;
 }
 
+/* About Us*/
 .infoBox1
 {
     /* height: 95vh; */
@@ -337,21 +338,27 @@ btn:visited
     padding-bottom: 20rem;
 }
 
+
+/* Our Projects */
 .infoBox2
 {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    
     padding: 10rem 0;
     background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
     rgba(50, 92, 108, 0.9));
     background-size: auto;
     transform: skewY(-7deg);
     /* height: 170vh; */
-    margin-top: -10rem;
+    
  }
 .infoBox2 > *
 {
     transform: skewY(7deg); /* shifts text to be normal */
 }
 
+/* Info Sessions */
 .infoBox3
 {
     padding: 10rem 0 10rem 0;
