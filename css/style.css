@@ -886,6 +886,11 @@ btn:visited
     .card__price-value{
         font-size:4rem
     }
+
+    .headingPrimaryMain
+    {
+        margin-top: 75% !important;
+    }
 }
 
 
