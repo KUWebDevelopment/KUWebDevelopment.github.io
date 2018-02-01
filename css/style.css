@@ -568,9 +568,15 @@ btn:visited
 {
     .headingPrimaryMain
     {
-        margin-top: 70% !important;
+        margin-top: 70%;
+        margin-left: 10%;
         font-size: 300%;
     }
+
+    .card__price-value 
+{
+    margin-left: -13%;
+}
 }
 
 @media (max-width: 767px) /* Optimize for tablet screens */
@@ -821,7 +827,7 @@ btn:visited
 }
 .card__price-value 
 {
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 100; 
     color: white;
 }
