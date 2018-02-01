@@ -564,6 +564,15 @@ btn:visited
     }
 }
 
+@media (max-width: 400px)
+{
+    .headingPrimaryMain
+    {
+        margin-top: 70% !important;
+        font-size: 300%;
+    }
+}
+
 @media (max-width: 767px) /* Optimize for tablet screens */
 {
     .projectsIcon
@@ -573,6 +582,11 @@ btn:visited
         right: 12.4%;
         background-color: rgba(199, 220, 221, 0.2);
         padding: 2.5%;
+    }
+    .headingPrimaryMain
+    {
+        margin-top: 70% !important;
+        font-size: 300%;
     }
 }
 
@@ -885,12 +899,6 @@ btn:visited
     }
     .card__price-value{
         font-size:4rem
-    }
-
-    .headingPrimaryMain
-    {
-        margin-top: 70% !important;
-        font-size: 300%;
     }
 }
 
