@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+
+<!--
+    Author: Giovanni Artavia, Brandon Lammey, Dylan Herrig, James Glass, Ashli Mosiman
+    Date Last Updated: 1 Feb 2018
+    File Name: index.html
+    Description: Basic webpage used to display information for the KU Web Design Club
+-->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -52,10 +60,11 @@
 
         </header>
 
-
+        <!-- Web Page Sections -->
         <div class="container-fluid">
             <div class="informationBoxes">
-
+                
+                <!-- About Us -->
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox1" id="about">
@@ -165,7 +174,7 @@
                     </div>
                 </div>
 
-                 <!--TODO: add in projects info-->
+                 <!--Our Projects-->
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="infoBox2" id="projects">
@@ -241,6 +250,7 @@
                     </div>
                 </div>
 
+                <!--Info Sessions-->
                 <div class="row">
                         <div class="infoBox3" id="tutorials">
                             <h1> <strong id="infoSessions"> Info Sessions </strong></h1><br>
@@ -352,37 +362,35 @@
         </div>
         <!--End Fluid Container-->
 
-        <!--TODO: Input contact information-->
-                <!--TODO: Fix Video Player-->
+        <!--Contact Us-->
+        <div class="Last" id="contact">
+            <!--Video Background-->
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+            </div>
 
-                            <div class="Last" id="contact">
+            <div class="contactInfoHead">
+                <h1> <strong>Contact Us </strong></h1>
+            </div>
 
-                                <div class="bg-video">
-                                    <video class="bg-video__content" autoplay muted loop>
-                                        <source src="img/video.mp4" type="video/mp4">
-                                        <source src="img/video.webm" type="video/webm">
-                                        Your browser is not supported!
-                                    </video>
-                                </div>
+            <div class="row">
+                <div class="contactInfo">
 
-                                <div class="contactInfoHead">
-                                    <h1> <strong>Contact Us </strong></h1>
-                                </div>
+                    <p>
+                    For more information or questions about attending a meeting, contact us at:
+                    <br>
+                    Email: ku.webdesign@gmail.com
+                    <br>
+                    Slack: KUWebDesign.slack.com
+                    </p>
 
-                                <div class="row">
-                                    <div class="contactInfo">
-
-                                            <p>
-                                                For more information or questions about attending a meeting, contact us at:
-                                                <br>
-                                                Email: ku.webdesign@gmail.com
-                                                <br>
-                                                Slack: KUWebDesign.slack.com
-                                            </p>
-
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Latest compiled and minified JavaScript -->
