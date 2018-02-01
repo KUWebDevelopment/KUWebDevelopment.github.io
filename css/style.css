@@ -572,11 +572,6 @@ btn:visited
         margin-left: 10%;
         font-size: 300%;
     }
-
-    .card__price-value 
-{
-    margin-left: -13%;
-}
 }
 
 @media (max-width: 767px) /* Optimize for tablet screens */
@@ -904,7 +899,7 @@ btn:visited
         margin-bottom:3rem
     }
     .card__price-value{
-        font-size:4rem
+        font-size:3rem
     }
 }
 
