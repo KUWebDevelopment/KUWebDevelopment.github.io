@@ -741,15 +741,15 @@ btn:visited
 }
 .card__picture--1 
 {
-    background-image: linear-gradient(to right bottom, rgba(40, 52, 90, 0.6), rgba(40, 52, 90, 1)), url(https://blogsimages.adobe.com/creativecloud/files/2016/09/code-10.png); 
+    background-image: linear-gradient(to right bottom, rgba(40, 52, 90, 0.6), rgba(40, 52, 90, 1)), url(../img/cardImage1.png); 
 }
 .card__picture--2 
 {
-    background-image: linear-gradient(to right bottom, rgba(1, 14, 31, 0.6), rgba(1, 14, 31, 1)), url(https://getbootstrap.com/assets/img/bootstrap-stack.png);
+    background-image: linear-gradient(to right bottom, rgba(1, 14, 31, 0.6), rgba(1, 14, 31, 1)), url(../img/cardImage2.png);
 }
 .card__picture--3 
 {
-    background-image: linear-gradient(to right bottom, rgba(50, 92, 108, 0.6), rgba(50, 92, 108, 1)), url(http://digital-adda.com/wp-content/uploads/2015/06/database_development-1.png);
+    background-image: linear-gradient(to right bottom, rgba(50, 92, 108, 0.6), rgba(50, 92, 108, 1)), url(../img/cardImage3.png);
 }
 .card__heading 
 {
