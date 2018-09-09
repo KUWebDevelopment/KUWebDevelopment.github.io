@@ -37,3 +37,39 @@ $(document).ready(function(){
     prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
   });
 
+
+/*
+Save Contact details to Firebase 
+*/
+function saveToFirebase(name, email, message) 
+{
+  var submissionObject = 
+  {
+      name: name,
+      email: email,
+      message: message
+  };
+
+  firebase.database().ref('subscription-entries').push().set(submissionObject).then(function(snapshot) 
+    {
+            success(); //success method
+    }, 
+  function(error) 
+    {
+            console.log('error' + error);
+            error(); // some error method
+    });
+  }
+
+function success()
+{
+  console.log("Succesfully added post to database.");
+  alert("Post Sent!")
+}
+
+function error()
+{
+  console.log("Error Adding Message!");
+}
+
+//saveToFirebase(email);

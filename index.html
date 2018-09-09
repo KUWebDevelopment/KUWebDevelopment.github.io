@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="css/fontstyle.css">
         <script type="text/javascript" src="js/design.js"></script>
 
-        <title>KU Web Design Club</title>
+        <title>KU Web Development Club</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -33,11 +33,42 @@
     <body id = "top">
 
         <!--navbar fixed to the top of the page-->
-        <nav class="navbar navbar-light navbar-fixed-top bg-light">
+        <!-- <nav class="navbar navbar-light navbar-fixed-top bg-light">
           <a class="btn-animated logo-box" href="#top">
             <img src="img/Jawhawk_Logo.png" alt="Logo" class="Logo">
           </a>
-        </nav>
+        </nav> -->
+
+        <!-- NAVBAR -->
+
+        <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-menubuilder">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#top">Home</a>
+                            </li>
+                            <li><a href="#about">About</a>
+                            </li>
+                            <li><a href="#ourProjects">Projects</a>
+                            </li>
+                            <li><a href="#infoSessions">Info Sessions</a>
+                            </li>
+                            <li><a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <!-- END NAVBAR  -->
 
         <!-- top header of page with clickable links to scroll to various sections of the page-->
         <header class="header">
@@ -45,16 +76,16 @@
             <div class="textBox">
                 <h1 class="headingPrimary">
                     <span class="headingPrimaryMain">KU</span>
-                    <span class="headingPrimarySub">Web Design Club</span>
+                    <span class="headingPrimarySub">Web Development Club</span>
                 </h1>
 
 
-			<ul id = "menuBarIndex">
+			<!-- <ul id = "menuBarIndex">
                 <li><a href="#about" class="btn btn-white btn-animated"> About </a></li>
                 <li><a href="#ourProjects" class="btn btn-white btn-animated"> Projects </a></li>
                 <li><a href="#infoSessions" class="btn btn-white btn-animated"> Info Sessions </a></li>
                 <li><a href="#contact" class="btn btn-white btn-animated"> Contact </a></li>
-            </ul>
+            </ul> -->
 
             </div>
 
@@ -71,7 +102,7 @@
                             <h1><strong> About Us </strong></h1>
                             <br><br>
                             <p>
-                                    We’re KU students interested in exploring web design & web development. We welcome all KU students interested in the web development field regardless of experience. We offer info sessions on web development languages as well as best practices. These skills will be used to develop individual and group based projects within the club ranging from beginner level to more advanced web development projects.
+                                    We’re KU students interested in exploring web development and design. We welcome all KU students interested in the web development field regardless of experience. We offer info sessions to aid in full stack developoment skills. These skills will be used to develop individual and group based projects within the club ranging from beginner level to more advanced web development projects.
                             <br><br>
                             </p>
 
@@ -79,7 +110,7 @@
                             <div class="row">
                                     <div class="col-md-4 col-xs-12">
                                             <h3><strong><u>Where</u> We Meet</strong></h3>
-                                            <p>LEEP2 room G411 <br>
+                                            <p>Learned 3150 <br>
                                             
                                     </div>
                                     <div class="col-md-4 col-xs-12">
@@ -88,7 +119,7 @@
                                     </div>
                                     <div class="col-md-4 col-xs-12">
                                             <h3><strong> <u>How</u> to Join </strong></h3>
-                                            <p>Simply notify us via email in the contact section below.</p>
+                                            <p>Attend our open meetings notify us using the form in the contact section below.</p>
                                     </div>
                             </div>
 
@@ -190,11 +221,11 @@
                                         <div class="projectDescriptionLayerLeft">
                                              <h4 class="projectTitle lineBottom">Social Network Page</h4>
                                             <p class="projectDescription">Fully functional social networking project that includes account creation, friend requests, and following. </p>
-                                            <a class="projectAnchor" href="https://github.com/KUWebDesign/Social_Network_Page" target="_blank">View more</a>
+                                            <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Social_Network_Page" target="_blank">View more</a>
                                         </div>
                                         <span class="projectsIcon projectsIconLeft">
                                             <span class="glyphicon glyphicon-new-window">
-                                                <a class="projectAnchor" href="https://github.com/KUWebDesign/Social_Network_Page" target="_blank">View more</a>
+                                                <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Social_Network_Page" target="_blank">View more</a>
                                             </span>
                                         </span>
                                     </div>
@@ -205,11 +236,11 @@
                                         <div class="projectDescriptionLayerRight">
                                             <h4 class="projectTitle lineBottom">Message Board</h4>
                                             <p class="projectDescription">Implementation of a message board including creation, deletion, and management of different types of posts and comments.</p>
-                                            <a class="projectAnchor" href="https://github.com/KUWebDesign/Message_Board" target="_blank">View more</a>
+                                            <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Message_Board" target="_blank">View more</a>
                                         </div>
                                         <span class="projectsIcon projectsIconRight">
                                             <span class="glyphicon glyphicon-new-window">
-                                                <a class="projectAnchor" href="https://github.com/KUWebDesign/Message_Board" target="_blank">View more</a>
+                                                <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Message_Board" target="_blank">View more</a>
                                             </span>
                                         </span>
                                     </div>
@@ -222,11 +253,11 @@
                                         <div class="projectDescriptionLayerLeft">
                                             <h4 class="projectTitle lineBottom">Personal About Page</h4>
                                             <p class="projectDescription">Page that functions as an interactive resume. Mainly covers html and css and is developed individually by every club member.</p>
-                                            <a class="projectAnchor" href="https://github.com/KUWebDesign/Personal_About_Page" target="_blank">View more</a>
+                                            <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Personal_About_Page" target="_blank">View more</a>
                                         </div>
                                         <span class="projectsIcon projectsIconLeft">
                                             <span class="glyphicon glyphicon-new-window">
-                                                <a class="projectAnchor" href="https://github.com/KUWebDesign/Personal_About_Page" target="_blank">View more</a>
+                                                <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Personal_About_Page" target="_blank">View more</a>
                                             </span>
                                         </span>
                                     </div>
@@ -237,11 +268,11 @@
                                         <div class="projectDescriptionLayerRight">
                                             <h4 class="projectTitle lineBottom">Custom Game App</h4>
                                             <p class="projectDescription">Completely functional browser game developed using JavaScript and other web development tools.</p>
-                                            <a class="projectAnchor" href="https://github.com/KUWebDesign/Custom_Game_App" target="_blank">View more</a>
+                                            <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Custom_Game_App" target="_blank">View more</a>
                                         </div>
                                         <span class="projectsIcon projectsIconRight">
                                             <span class="glyphicon glyphicon-new-window">
-                                                <a class="projectAnchor" href="https://github.com/KUWebDesign/Custom_Game_App" target="_blank">View more</a>
+                                                <a class="projectAnchor" href="https://github.com/KUWebDevelopment/Custom_Game_App" target="_blank">View more</a>
                                             </span>
                                         </span>
                                     </div>
@@ -264,15 +295,14 @@
                                                     &nbsp;
                                                 </div>
                                                 <h4 class="card__heading">
-                                                    <span class="card__heading-span card__heading-span--1">HTML, CSS, GitHub</span>
+                                                    <span class="card__heading-span card__heading-span--1">Basic Web Languages</span>
                                                 </h4>
                                                 <div class="card__details">
                                                     <ul>
-                                                        <li>HTML and CSS basics</li>
+                                                        <li>HTML, CSS, and Javascript Basics</li>
                                                         <li>Design flow and best practices</li>
-                                                        <li>Version vontrol using GitHub</li>
-                                                        <li>Code-Along</li>
-                                                        <li><strong>Date: </strong>02/08/2018</li>
+                                                        <li>Version control using GitHub</li>
+                                                        <li><strong>Date: </strong>TBD</li>
                                                     </ul>
                                                 </div>
                                         </div>
@@ -282,7 +312,7 @@
                                                         <!-- <p class="card__price-only">Only</p> -->
                                                         <p class="card__price-value">Workspace:</p>
                                                     </div>
-                                                    <a href="https://jsfiddle.net/KUWebDesign/923cn0h4/24/" class="btn btn-white">Click here!</a>
+                                                    <a href="#" class="btn btn-white">Click here!</a>
                                                 </div>
                                             </div>
                                     </div>
@@ -296,14 +326,14 @@
                                                     &nbsp;
                                                 </div>
                                                 <h4 class="card__heading">
-                                                    <span class="card__heading-span card__heading-span--2">Bootstrap, JS, JQuery</span>
+                                                    <span class="card__heading-span card__heading-span--2">Front End Frameworks</span>
                                                 </h4>
                                                 <div class="card__details">
                                                     <ul>
-                                                        <li>Bootstrap for quick front-end design</li>
-                                                        <li>Add functionality to your pages</li>
-                                                        <li>JavaScript and JQuery basics</li>
-                                                        <li><strong>Date: </strong>02/15/2018</li>
+                                                        <li>Bootstrap, Semantic UI, Foundation, Bulma</li>
+                                                        <li>Quickly develop your front end with pre-built UI components</li>
+                                                        <li>Responsive Design: Mobile First</li>
+                                                        <li><strong>Date: </strong>TBD</li>
                                                     </ul>
                                                 </div>
 
@@ -315,7 +345,7 @@
                                                         <p class="card__price-value">Workspace:</p>
 
                                                     </div>
-                                                    <a href="https://github.com/KUWebDesign/Info-Session-2" class="btn btn-white">Click here!</a>
+                                                    <a href="#" class="btn btn-white">Click here!</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -329,15 +359,15 @@
                                                     &nbsp;
                                                 </div>
                                                 <h4 class="card__heading">
-                                                    <span class="card__heading-span card__heading-span--3">Databases, Back-End</span>
+                                                    <span class="card__heading-span card__heading-span--3">Back-End Development</span>
                                                 </h4>
                                                 <div class="card__details">
                                                     <ul>
-                                                        <li>Add back-end functionality</li>
-                                                        <li>MongoDB</li>
-                                                        <li>MySQL</li>
-                                                        <li>PHP</li>
-                                                        <li><strong>Date: </strong>03/15/2018</li>
+
+                                                        <li>Relational VS Non Relational</li>
+                                                        <li>Database Design</li>
+                                                        <li>MySQL, MongoDB, Firebase</li>
+                                                        <li><strong>Date: </strong>TBD</li>
                                                     </ul>
                                                 </div>
 
@@ -348,7 +378,7 @@
                                                         <!-- <p class="card__price-only">Only</p> -->
                                                         <p class="card__price-value center">Workspace:</p>
                                                     </div>
-                                                    <a href="https://github.com/KUWebDesign/Info-Session-3" class="btn btn-white">Click here!</a>
+                                                    <a href="#" class="btn btn-white">Click here!</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -358,14 +388,65 @@
                         </div>
                 </div>
 
+                <!-- BEGIN CONTACT -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="infoBox2" id="#">
+
+                            <div class="main-content">
+                                
+                                <div class="content-header">
+                                    <a class="anchor" name="contact"></a>
+                                    <h1> <strong id="contact">Contact Us </strong></h1>
+                                </div>
+                                <p>
+                                Use the form below to request more information  
+                                about the club, attending a meeting, or putting in a project request. 
+                                </p>
+                    
+                                <div class="contact content-body">
+                                    <form method="POST" action="#" id="form_id" onsubmit="saveToFirebase(document.getElementById('nameID').value, document.getElementById('emailID').value, document.getElementById('messageID').value); return false">
+                                        
+                                        <input type="text" name="_subject" id="nameID" placeholder="Your name" required />
+                                        <input type="email" name="_replyto" id="emailID" placeholder="Your email" required>
+                                        <textarea name="message" id="messageID" placeholder="Your message" required></textarea>
+                                        
+                                        <button type="submit" >Send</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTACT -->
+    
+                <!-- BEGIN FOOTER -->
+                <div class="row">
+                    <div class="side-content"></div>
+                    <div class="main-content">
+                    <div class="content-header">
+                    </div>
+                    <div class="content-body">
+                        <p>Copyright KU Web Development Club 2018</p>
+                    </div>
+                    </div>
+                    <div class="side-content"></div>
+                </div>
+                <!-- END FOOTER -->
+
             </div>
             <!--End InfoBoxes-->
+
+
+
         </div>
         <!--End Fluid Container-->
 
-        <!--Contact Us-->
-        <div class="Last" id="contact">
-            <!--Video Background-->
+        <!--Old Contact Us-->
+        <!-- <div class="Last" id="contact">
+            
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -386,7 +467,7 @@
                     <br>
                     Email: ku.webdesign@gmail.com
                     <br>
-                    Slack: KUWebDesign.slack.com
+                    Slack: KUWebDevelopment.slack.com
 		    <br>
                     <a href="https://join.slack.com/t/kuwebdesign/shared_invite/enQtMzExODM5MTQxNzMzLTJmNTkzMGE3NTJkODUwYTM3MWU3M2Y5ZmMxNjgwYTBhMWY5M2VkY2NhYjBlYzU1OGQwZDI1YzU3NTgyMzFiMTQ">Slack Group Invite</a>
 			
@@ -394,8 +475,23 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB610sz3IOQxtjfSfoKyXTIy7UBPlWjpKk",
+            authDomain: "club-page.firebaseapp.com",
+            databaseURL: "https://club-page.firebaseio.com",
+            projectId: "club-page",
+            storageBucket: "club-page.appspot.com",
+            messagingSenderId: "139564749786"
+        };
+        firebase.initializeApp(config);
+        </script>
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
