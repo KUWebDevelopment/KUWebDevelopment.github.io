@@ -309,14 +309,7 @@ btn:visited
 }
 
 
-.navbar-header{
-    text-align:center;
-}
 
-.navbar-toggle {
-    float: none;
-    margin-right:0;
-}
 .navbar .navbar-collapse
 {
     text-align: center;
