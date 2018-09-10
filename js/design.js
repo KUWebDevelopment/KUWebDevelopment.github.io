@@ -28,13 +28,13 @@ $(document).ready(function(){
     });
 
     //Automatically change next meeting date
-    let nextMeeting = new Date(); //Starts as current date
-    let prevMeeting = $("#nextMeetingDate");
+    // let nextMeeting = new Date(); //Starts as current date
+    // let prevMeeting = $("#nextMeetingDate");
 
-    if(nextMeeting.getDay() == 3){ //if date is Wednesday, change to next Tuesday
-      nextMeeting.setDate(nextMeeting.getDate() + 6);
-    }
-    prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
+    // if(nextMeeting.getDay() == 3){ //if date is Wednesday, change to next Tuesday
+    //   nextMeeting.setDate(nextMeeting.getDate() + 6);
+    // }
+    // prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
   });
 
 
