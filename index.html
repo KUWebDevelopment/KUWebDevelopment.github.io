@@ -2,7 +2,7 @@
 
 <!--
     Author: Giovanni Artavia, Brandon Lammey, Dylan Herrig, James Glass, Ashli Mosiman
-    Date Last Updated: 1 Feb 2018
+    Date Last Updated: 12 September 2018
     File Name: index.html
     Description: Basic webpage used to display information for the KU Web Design Club
 -->
@@ -70,8 +70,8 @@
 
         <!-- END NAVBAR  -->
 
-        <!-- top header of page with clickable links to scroll to various sections of the page-->
-        <header class="header">
+        <!-- top header of page-->
+        <header class="header" id="header">
 
             <div class="textBox">
                 <h1 class="headingPrimary">
@@ -98,8 +98,8 @@
                 <!-- About Us -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="infoBox1" id="about">
-                            <h1><strong> About Us </strong></h1>
+                        <div class="infoBox1">
+                            <h1><strong id="about"> About Us </strong></h1>
                             <br><br>
                             <p>
                                     We’re KU students interested in exploring web development and design. We welcome all KU students interested in the web development field regardless of experience. We offer info sessions to aid in full stack developoment skills. These skills will be used to develop individual and group based projects within the club ranging from beginner level to more advanced web development projects.
@@ -110,7 +110,7 @@
                             <div class="row">
                                     <div class="col-md-4 col-xs-12">
                                             <h3><strong><u>Where</u> We Meet</strong></h3>
-                                            <p>Learned 3150 <br>
+                                            <p>General: Learned 3150 <br> Lab: Eaton 1018 <br>
                                             
                                     </div>
                                     <div class="col-md-4 col-xs-12">
@@ -288,6 +288,8 @@
                             <h1> <strong id="infoSessions"> Info Sessions </strong></h1><br>
                             <section class="section-tours" id="section-tours">
                                 <div class="row tutorialRow">
+
+
                                     <div class="col-md-4 col-sm-12  leftInfoSession">
                                     <div class="card">
                                         <div class="card__side card__side--front">
@@ -302,7 +304,7 @@
                                                         <li>HTML, CSS, and Javascript Basics</li>
                                                         <li>Design flow and best practices</li>
                                                         <li>Version control using GitHub</li>
-                                                        <li><strong>Date: </strong>TBD</li>
+                                                        <li><strong>Date: </strong>09/18/2018</li>
                                                     </ul>
                                                 </div>
                                         </div>
@@ -401,7 +403,7 @@
                                 </div>
                                 <p>
                                 Use the form below to request more information  
-                                about the club, attending a meeting, or putting in a project request. 
+                                about the club, attending a meeting, or putting in a project request. Or join our slack using a KU email address. 
                                 </p>
                     
                                 <div class="contact content-body">
@@ -415,7 +417,11 @@
                                     </form>
                                 </div>
 
+                                <div class="slack">
+                                <a href="https://join.slack.com/t/kuwebdevelopment/shared_invite/enQtMzExODM5MTQxNzMzLTJmNTkzMGE3NTJkODUwYTM3MWU3M2Y5ZmMxNjgwYTBhMWY5M2VkY2NhYjBlYzU1OGQwZDI1YzU3NTgyMzFiMTQ"><img alt="Sign in with Slack" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x"/></a>
+                                </div>
                             </div>
+                            
                 
                         </div>
                     </div>
@@ -428,7 +434,8 @@
                     <div class="main-content">
                     <div class="content-header">
                     </div>
-                    <div class="content-body">
+                    <div class="content-body" id="footer">
+
                         <p>Copyright KU Web Development Club 2018</p>
                     </div>
                     </div>

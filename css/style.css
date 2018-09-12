@@ -56,6 +56,7 @@ h3 strong
 .row
 {
     margin: auto !important;
+    padding-top: 2.5rem;
 }
 
 /* Start of header */
@@ -277,6 +278,8 @@ btn:visited
     background: none;
     border-bottom-width: 0px;
 }
+
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(1, 14, 31, 1);
     /* background-color: rgba(243, 243, 252, 1); */
@@ -383,7 +386,11 @@ btn:visited
 {
     /* height: 95vh; */
     background-size: auto;
-    padding-bottom: 10rem;
+    padding: 5rem 0;
+}
+#about
+{
+    padding-top: 7rem;
 }
 
 
@@ -406,12 +413,23 @@ btn:visited
     transform: skewY(7deg); /* shifts text to be normal */
 }
 
+#ourProjects
+{
+    padding-top: 7rem;
+}
+
 /* Info Sessions */
 .infoBox3
 {
     padding: 10rem 0 10rem 0;
     background-size: auto;
 }
+
+#infoSessions
+{
+    padding-top: 7rem;
+}
+
 
 /*Contact Us*/
 .infoBox4
@@ -429,6 +447,12 @@ btn:visited
     max-width: 50%;
     margin: 0 auto;
   }
+
+  #contact
+{
+    padding-top: 7rem;
+}
+
   
   .contact input, .contact textarea {
     display: block;
@@ -469,6 +493,11 @@ btn:visited
     padding: 0%;
     height: 40%;
     padding: 2% 0; 
+}
+
+#footer
+{
+    padding: 5rem 0;
 }
 
 /* Project links in infoBox 2 */
@@ -1034,6 +1063,11 @@ btn:visited
 .contactInfoText
 {
     text-align: center !important; 
+}
+
+.slack
+{
+    padding-top: 5rem;
 }
 /* End Contact Section Content*/
 

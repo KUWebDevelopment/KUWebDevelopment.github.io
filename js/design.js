@@ -35,6 +35,20 @@ $(document).ready(function(){
       nextMeeting.setDate(nextMeeting.getDate() + 6);
     }
     prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
+
+    var top = $('.infoBox1').offset().top;
+
+    $(document).scroll(function(){
+      if($(this).scrollTop() > top)
+      {   
+        $('.navbar-default').css({"background-color": "#fff"})
+      }
+      else
+      {
+          $('.navbar-default').css({"background": "none"})
+      }
+    });
+
   });
 
 
@@ -72,7 +86,7 @@ function error()
   console.log("Error Adding Message!");
 }
 
-//saveToFirebase(email);
+
 
 
 //Close navbar when ancher tag is clicked
@@ -81,3 +95,23 @@ $(document).on('click','.navbar-collapse.in',function(e) {
       $(this).collapse('hide');
   }
 });
+
+
+
+
+// //Modify Navbar on Scroll
+// var mainbottom = $('#header').height();
+
+// // on scroll, 
+// $(window).on('scroll',function(){
+
+//     // we round here to reduce a little workload
+//     stop = Math.round($(window).scrollTop());
+//     if (2 > 1) {
+//         $('custom-bootstrap-menu.navbar-default').addClass('update-nav');
+//     } else {
+//         $('custom-bootstrap-menu.navbar-default').removeClass('update-nav');
+//    }
+
+// });
+
