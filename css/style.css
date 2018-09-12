@@ -318,6 +318,14 @@ btn:visited
     text-align: center;
 }
 
+.navbar-header{
+    text-align:center !important;
+}
+
+.navbar-toggle {
+    float: none !important;
+    margin-right:0 !important;
+}
 /* Animations */
 @keyframes moveInLeft
 {
