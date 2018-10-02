@@ -438,6 +438,11 @@ btn:visited
     padding-top: 7rem;
 }
 
+/* Slides */
+#meetingSlides
+{
+    padding-top: 7rem;
+}
 
 /*Contact Us*/
 .infoBox4
@@ -456,7 +461,7 @@ btn:visited
     margin: 0 auto;
   }
 
-  #contact
+  #contactUs
 {
     padding-top: 7rem;
 }
@@ -507,6 +512,12 @@ btn:visited
 {
     padding: 5rem 0;
 }
+#footer-main
+{
+    background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
+    rgba(50, 92, 108, 0.9));
+}
+
 
 /* Project links in infoBox 2 */
 
